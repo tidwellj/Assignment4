@@ -12,7 +12,7 @@ public class Pprefs : MonoBehaviour
     // Start is called before the first frame update
     public void Awake()
     {
-        // 1
+        
         if (!PlayerPrefs.HasKey("music"))
         {
             PlayerPrefs.SetInt("music", 1);
@@ -20,7 +20,7 @@ public class Pprefs : MonoBehaviour
             myAudio.enabled = true;
             PlayerPrefs.Save();
         }
-        // 2
+       
         else
         {
             if (PlayerPrefs.GetInt("music") == 0)
